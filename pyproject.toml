@@ -1,0 +1,22 @@
+[project]
+name = "diet-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "unclehook",email = "unclehook@ispras.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram (>=3.18.0,<4.0.0)",
+    "aiohttp (>=3.11.13,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [
+    { include = "diet_bot" },
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
